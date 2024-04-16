@@ -52,7 +52,17 @@ daily_users = marketing.groupby('date_served')['user_id'].nunique()
 # Print head of daily_users
 print(daily_users.head())
 
+# Plot daily_subscribers
+daily_users.plot()
 
+# Include a title and y-axis label
+plt.title('Daily users')
+plt.xlabel('Number of users')
+
+# Rotate the x-axis labels by 45 degrees
+plt.xticks(rotation=45)
+# Display the plot
+plt.show()
 
 
 
