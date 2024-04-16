@@ -1,14 +1,7 @@
-# Plot daily_subscribers
-daily_users.plot()
+daily user 
 
-# Include a title and y-axis label
-plt.title('Daily users')
-plt.xlabel('Number of users')
+<img width="495" alt="image" src="https://github.com/frhanim13/python/assets/48370531/a6dda92a-4907-468e-a628-25ca202710df">
 
-# Rotate the x-axis labels by 45 degrees
-plt.xticks(rotation=45)
-# Display the plot
-plt.show()
 
 
 
