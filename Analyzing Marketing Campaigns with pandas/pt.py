@@ -36,6 +36,25 @@ numpy as np
 # Add the new column is_correct_lang
 marketing['is_correct_lang'] = np.where(marketing['language'] == 'English', True, False)
 
+# Import pandas into the environment
+import pandas  as pd 
+
+# Import marketing.csv with date columns
+marketing = pd.read_csv('marketing.csv', parse_dates=['date_served', 'date_subscribed','date_canceled'])
+
+# Add a DoW column
+marketing['DoW'] = marketing['date_subscribed'].dt.dayofweek
+
+#determine how many users are seeing the marketing assets each day
+
+daily_users = marketing.groupby('date_served')['user_id'].nunique()
+
+# Print head of daily_users
+print(daily_users.head())
+
+
+
+
 
 
 
