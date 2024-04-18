@@ -64,6 +64,57 @@ plt.xticks(rotation=45)
 # Display the plot
 plt.show()
 
+# Calculate the number of people we marketed to
+total = len (marketing)
+
+# Calculate the number of people who subscribed
+subscribers = marketing[marketing['converted'] == True]['user_id'].nunique()
+
+# Calculate the conversion rate
+conversion_rate = subscribers / total
+print(round(conversion_rate * 100, 2), "%")
+
+# Calculate the number of subscribers
+total_subscribers = marketing['converted'].sum()
+
+# Calculate the number of people who remained subscribed
+retained = marketing[marketing['is_retained'] == True]['user_id'].nunique()
+
+# Calculate the retention rate
+retention_rate = retained / total_subscribers
+
+# Print the retention rate (rounded to two decimal places)
+print(round(retention_rate * 100, 2), "%")
+
+
+
+# Calculate the number of subscribers
+total_subscribers = marketing[marketing["converted"] == True]\
+                            ['user_id'].nunique()
+
+# Calculate the number of people who remained subscribed
+retained = marketing[marketing['is_retained'] == True]\
+                   ['user_id'].nunique()
+
+# Calculate the retention rate
+retention_rate = retained/total_subscribers
+print(round(retention_rate*100, 2), "%")
+
+
+# Isolate english speakers
+english_speakers = marketing[marketing['language_displayed'] == 'English']
+
+# Calculate the total number of english speaking users
+total = english_speakers['user_id'].nunique()
+
+# Calculate the number of english speakers who converted
+subscribers = english_speakers[english_speakers['converted'] == True]\
+                            ['user_id'].nunique()
+
+# Calculate conversion rate
+conversion_rate = subscribers/total
+print('English speaker conversion rate:',  round(conversion_rate*100,2), '%') 
+English speaker conversion rate: 13.13 %
 
 
 
