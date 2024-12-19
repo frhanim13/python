@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-# Start coding here...
+
 
 file_path = "bank_marketing.csv"
 data = pd.read_csv(file_path)
