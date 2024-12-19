@@ -8,4 +8,4 @@ The dataset drug_safety.csv was obtained from Hbiostat courtesy of the Vanderbil
 
 2)Find out if the number of adverse effects is independent of the treatment and control groups, saving as a variable called num_effects_p_value containing a p-value.
 
-3) Examine if there is a significant difference between the ages of the Drug and Placebo groups, storing the p-value of your test in a variable called age_group_effects_p_value.
+3)Examine if there is a significant difference between the ages of the Drug and Placebo groups, storing the p-value of your test in a variable called age_group_effects_p_value.
