@@ -20,7 +20,7 @@ The dataset drug_safety.csv was obtained from Hbiostat courtesy of the Vanderbil
 
 3. For the pharmaceutical company (GlobalXYZ), this could indicate that the drug is generally safe concerning the adverse effects measured in this study.
 
-**2. Independence of Number of Adverse Effects and Treatment Groups**
+**2. Independence of Number of Adverse Effects and Treatment Groups** <br>
  num_effects_p_value= 0.6150
  
 1. The number of adverse effects appears to be similar across the Drug and Placebo groups.
@@ -32,7 +32,7 @@ However, other safety metrics (e.g., severity of effects, long-term outcomes) sh
 3. A high p-value does not confirm that the drug has no adverse effects; it only suggests that any observed differences in the number of adverse effects are likely due to random variation.
 Further studies with larger sample sizes might be necessary to detect smaller effects, if any.
 
-**3.Difference in Ages Between Drug and Placebo Groups**
+**3.Difference in Ages Between Drug and Placebo Groups** <br>
 age_group_effects_p_value = 0.2569 (from Mann-Whitney U test)
 
 1. Participants in the Drug and Placebo groups likely have a similar age distribution.
